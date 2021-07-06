@@ -1,11 +1,11 @@
 package main
 
-// import "log"
+import "log"
 
-// func main() {
-// 	var myCat []string
-// 	myCat = append(myCat, "Millen")
-// 	myCat = append(myCat, "Nikki")
+func main() {
+	var myCat []string
+	myCat = append(myCat, "Millen")
+	myCat = append(myCat, "Nikki")
 
-// 	log.Println(myCat[0:])
-// }
+	log.Println(myCat[0:])
+}

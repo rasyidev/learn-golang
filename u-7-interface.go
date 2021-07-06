@@ -12,15 +12,15 @@ type Dog struct {
 	Breed string
 }
 
-// func main() {
-// 	dog := Dog{
-// 		Name:  "Samsul",
-// 		Breed: "German Sephered",
-// 	}
+func main() {
+	dog := Dog{
+		Name:  "Samsul",
+		Breed: "German Sephered",
+	}
 
-// 	PrintInfo(&dog)
+	PrintInfo(&dog)
 
-// }
+}
 
 func (d *Dog) Says() string {
 	return "Oug Oug"

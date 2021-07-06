@@ -1,34 +1,36 @@
 package main
 
-// func main() {
+import "log"
 
-// 	var myMapOfString = make(map[int]string)
-// 	myMapOfString[0] = "Zero"
-// 	myMapOfString[1] = "One"
-// 	myMapOfString[2] = "Two"
+func main() {
 
-// 	type User struct {
-// 		FirstName string
-// 		LastName  string
-// 	}
+	var myMapOfString = make(map[int]string)
+	myMapOfString[0] = "Zero"
+	myMapOfString[1] = "One"
+	myMapOfString[2] = "Two"
 
-// 	var myMapOfUser = make(map[string]User)
+	type User struct {
+		FirstName string
+		LastName  string
+	}
 
-// 	log.Println(myMapOfString)
-// 	log.Println("zero:", myMapOfString[0], "one:", myMapOfString[1], "two:", myMapOfString[2])
+	var myMapOfUser = make(map[string]User)
 
-// 	user1 := User{
-// 		FirstName: "Avril",
-// 		LastName:  "Lavigne",
-// 	}
+	log.Println(myMapOfString)
+	log.Println("zero:", myMapOfString[0], "one:", myMapOfString[1], "two:", myMapOfString[2])
 
-// 	user2 := User{
-// 		FirstName: "Taylor",
-// 		LastName:  "Swift",
-// 	}
+	user1 := User{
+		FirstName: "Avril",
+		LastName:  "Lavigne",
+	}
 
-// 	myMapOfUser["al"] = user1
-// 	myMapOfUser["ts"] = user2
+	user2 := User{
+		FirstName: "Taylor",
+		LastName:  "Swift",
+	}
 
-// 	log.Println(myMapOfUser)
-// }
+	myMapOfUser["al"] = user1
+	myMapOfUser["ts"] = user2
+
+	log.Println(myMapOfUser)
+}

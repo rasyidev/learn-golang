@@ -1,5 +1,7 @@
 package main
 
+import "log"
+
 type User struct {
 	UserName  string
 	FirstName string
@@ -8,14 +10,14 @@ type User struct {
 	Age       int8
 }
 
-// func main() {
-// 	user := User{
-// 		FirstName: "Christiano",
-// 		LastName:  "Ronaldo",
-// 		UserName:  "christiano.ronaldo@football.com",
-// 		Company:   "Football",
-// 		Age:       37,
-// 	}
+func main() {
+	user := User{
+		FirstName: "Christiano",
+		LastName:  "Ronaldo",
+		UserName:  "christiano.ronaldo@football.com",
+		Company:   "Football",
+		Age:       37,
+	}
 
-// 	log.Println(user.FirstName)
-// }
+	log.Println(user.FirstName)
+}
